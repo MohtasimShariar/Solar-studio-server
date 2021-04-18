@@ -26,7 +26,7 @@ app.use(cors());
 const port = 5055;
 
 app.get('/', (req, res) => {
-    res.send("Hi, I am MongoDB are you ok")
+    res.send("Hi! their ")
 })
 
 //const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -65,7 +65,7 @@ client.connect(err => {
   // app.delete('/ClientOrder/:id', (req, res) => {
   //   const id = ObjectID(req.params.id);
     
-  //   adminCollection.findOneAndDelete({_id: id})
+  //   ClientOrder.findOneAndDelete({_id: id})
   //   .then(result => {
       
   //     res.send(result.deletedCount > 0)
