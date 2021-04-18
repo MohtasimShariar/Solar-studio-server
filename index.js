@@ -62,6 +62,15 @@ client.connect(err => {
       
     })
   });
+  // app.delete('/ClientOrder/:id', (req, res) => {
+  //   const id = ObjectID(req.params.id);
+    
+  //   adminCollection.findOneAndDelete({_id: id})
+  //   .then(result => {
+      
+  //     res.send(result.deletedCount > 0)
+  //   })
+  //  });
 
   app.post('/addClientReview', (req, res) => {
     const clientReview = req.body;
